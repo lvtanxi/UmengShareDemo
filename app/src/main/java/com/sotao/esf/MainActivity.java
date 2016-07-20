@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onShare(View view) {
         mUmengShare.bindText("发出啊时代发生的发生的借款方红啊的还是法律监督还是佛教啊黑色的礼服就不哈了多少速度发我说的发生的发生的")
+                .bindTitle("檀溪测试")
                 .bindTargetUrl("http://baidu.com")
                 .bindUMShareListener(new UMShareListener() {
                     @Override
@@ -43,6 +44,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        mUmengShare.auth(requestCode,resultCode,data);
+        mUmengShare.sinaAuth(requestCode,resultCode,data);
     }
 }
